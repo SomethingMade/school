@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rare Grade Tech – We Handle I.T</title>
 <meta name="description" content="Rare Grade Tech is a full-service technology company in Mokopane: software, mobile apps, AI, IT support and hardware.">
+<link rel="icon" href="https://i.postimg.cc/4dbyWT4x/1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -29,7 +30,8 @@ section{padding:88px 0}
 /* nav */
 nav{position:sticky;top:0;z-index:10;background:var(--blue);color:#fff;padding-top:env(safe-area-inset-top,0px)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
-nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;white-space:nowrap}
+nav .brand{display:flex;align-items:center;text-decoration:none;white-space:nowrap}
+nav .brand img{height:36px;width:auto;display:block}
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.9rem;overflow-x:auto}
 nav ul a{text-decoration:none;opacity:.88;white-space:nowrap}
 nav ul a:hover{opacity:1;text-decoration:underline}
@@ -39,7 +41,7 @@ nav ul a:hover{opacity:1;text-decoration:underline}
 .hero{background:var(--blue);color:#fff;position:relative;overflow:hidden;padding:96px 0 120px}
 .hero svg.circuit{position:absolute;right:-40px;top:0;height:100%;width:60%;opacity:.35}
 .hero .wrap{position:relative}
-.hero .tag{color:#ff8a7a;letter-spacing:.28em;font-size:.8rem;margin:18px 0 0}
+.hero-logo{display:block;width:min(260px,70vw);height:auto}
 .hero h1{color:#fff;font-size:clamp(3rem,9vw,6.4rem);font-weight:800;letter-spacing:-.04em;margin-top:34px}
 .hero h1 span{display:inline-block;background:#000;padding:0 .18em;border-radius:.12em;margin-left:.1em}
 .hero p.lead{margin-top:26px;font-size:1.15rem;color:#dfe3ff;max-width:46ch}
@@ -141,17 +143,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="logo" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="46" fill="#fff"/>
-    <path d="M56 14c14 2 24 14 22 28l6 12-8 3 1 9c0 8-8 12-16 12v10H42V70C30 64 26 52 30 40c3-12 12-27 26-26z" fill="#0000e0"/>
-    <g stroke="#fff" stroke-width="3" fill="#fff"><path d="M4 36h30M10 50h26M4 64h24" fill="none"/><circle cx="4" cy="36" r="4"/><circle cx="10" cy="50" r="4"/><circle cx="4" cy="64" r="4"/></g>
-  </symbol>
-</svg>
-
 <nav>
   <div class="wrap">
-    <a class="brand" href="#top"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg>Rare Grade Tech</a>
+    <a class="brand" href="#top"><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt="Rare Grade Tech"></a>
     <ul>
       <li><a href="#about">About</a></li><li><a href="#vision">Vision</a></li><li><a href="#services">Services</a></li>
       <li><a href="#industries">Industries</a></li><li><a href="#values">Values</a></li><li><a href="#why">Why us</a></li><li><a href="#contact">Contact</a></li>
@@ -165,8 +159,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <g fill="#fff"><circle cx="180" cy="80" r="5"/><circle cx="290" cy="210" r="5"/><circle cx="340" cy="220" r="5"/><circle cx="210" cy="420" r="5"/><circle cx="300" cy="380" r="5"/><circle cx="180" cy="460" r="5"/></g>
   </svg>
   <div class="wrap">
-    <svg width="96" height="96" role="img" aria-label="Rare Grade Tech logo"><use href="#logo"/></svg>
-    <p class="tag">IMAGINATION TO REALITY</p>
+    <img class="hero-logo" src="https://i.postimg.cc/4dbyWT4x/1.png" alt="Rare Grade Tech logo">
     <h1>We Handle <span>I.T</span></h1>
     <p class="lead">Rare Grade Tech is a full-service technology company in Mokopane, delivering end-to-end digital solutions across multiple industries.</p>
     <div class="btns"><a class="btn solid" href="#contact">Talk to our team</a><a class="btn ghost" href="#services">See our services</a></div>
