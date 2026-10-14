@@ -4,124 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rare Grade Tech – Company Profile 2026</title>
-<link rel="icon" href="https://i.postimg.cc/4dbyWT4x/1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
-<style>
-:root{--blue:#0000e0;--deep:#00008f;--ink:#0a0a50;--soft:#2323d6;--sheet:#fff;--bg:#d9dcf2}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);font-family:Poppins,system-ui,sans-serif;color:var(--ink);line-height:1.55;padding:24px 16px}
-.page{position:relative;max-width:1000px;margin:0 auto 28px;background:var(--sheet);border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,40,.18);min-height:min(707px,auto)}
-@media(min-width:900px){.page{aspect-ratio:1308/924}}
-
-/* header band */
-.band{background:var(--blue);color:#fff;display:flex;align-items:center;gap:18px;padding:0 36px;height:20%;min-height:96px}
-.band h2{margin:0;font-size:clamp(1.4rem,3.4vw,2.3rem);font-weight:700;letter-spacing:-.01em;color:#fff;white-space:nowrap}
-.pills{display:flex;gap:6px}
-.pills i{display:block;width:16px;height:40px;border-radius:9px;background:#c9cdf5}
-.pills i:nth-child(2){background:#8a8de0}.pills i:nth-child(3){background:#4546d8}.pills i:nth-child(4){background:#2323c0}
-.bar{flex:1;height:40px;border-radius:10px;background:rgba(255,255,255,.14)}
-.band img{height:46px;width:auto;margin-left:auto}
-.num{position:absolute;right:0;bottom:34px;background:var(--blue);color:#fff;font-weight:700;padding:8px 24px 8px 30px;border-radius:30px 0 0 30px}
-.foot{position:absolute;left:36px;right:110px;bottom:22px;font-style:italic;font-weight:600;font-size:.95rem;color:var(--blue)}
-.body{padding:32px 36px 90px}
-p{margin:0}
-.lead{max-width:62ch}
-b,strong{font-weight:700}
-
-/* cover */
-.cover{background:var(--blue);color:#fff;display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:auto 1fr auto;gap:24px;padding:36px}
-.cover .logo{width:min(300px,100%)}
-.cover .tag{grid-column:1;align-self:center}
-.cover .tag h1{margin:0 0 18px;font-size:clamp(2.2rem,6vw,4rem);font-weight:800;letter-spacing:-.03em;color:#fff;line-height:1.05}
-.motto{display:inline-block;background:#000;color:#fff;border-radius:999px;padding:9px 22px;font-size:.9rem}
-.cover .cta{grid-column:2;grid-row:1/4;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;text-align:right}
-.chip{display:inline-flex;align-items:center;gap:10px;background:#2323d6;border-radius:12px;padding:12px 26px;font-weight:700;font-size:clamp(1.3rem,3vw,2rem)}
-.chip .it{background:#000;border-radius:6px;padding:0 10px}
-.contact{text-align:left;border-left:3px solid #fff;padding-left:14px;font-size:.98rem;line-height:1.9}
-.contact a{color:#fff;text-decoration:none}
-.cover .follow{font-weight:600;grid-column:1}
-@media(max-width:899px){.cover{grid-template-columns:1fr}.cover .cta{grid-column:1;grid-row:auto;align-items:flex-start;text-align:left;gap:28px}}
-
-/* overview */
-.two{display:grid;grid-template-columns:1.3fr .7fr;gap:28px}
-.card{background:var(--blue);color:#fff;border-radius:14px;padding:26px 28px}
-.card h3{margin:20px 0 14px;color:#fff;font-size:1.2rem}
-.card ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.card li{padding-left:22px;position:relative}
-.card li::before{content:"";position:absolute;left:0;top:.6em;width:9px;height:9px;border-radius:50%;background:#9db4ff}
-.visual{border:3px solid var(--blue);border-radius:14px;min-height:200px;background:linear-gradient(160deg,#eef0ff,#c9cdf5);display:grid;place-items:center}
-.visual img{width:70%;max-width:200px}
-@media(max-width:700px){.two{grid-template-columns:1fr}}
-
-/* about */
-.dark{background:var(--deep);color:#fff}
-.dark .band{background:var(--blue)}
-.dark p{color:#e4e7ff}
-.journey{margin-top:26px;background:var(--blue);border-radius:14px;padding:22px 28px;color:#fff;max-width:760px}
-.journey h3{margin:0 0 10px;color:#fff;font-size:1.25rem}
-.journey p{font-style:italic;font-weight:600;color:#fff}
-.dark .foot{color:#cfd6ff}
-.dark .num{background:#fff;color:var(--blue)}
-
-/* mission */
-.vm{display:grid;gap:18px;max-width:640px;margin-top:22px}
-.vm div{background:var(--blue);color:#fff;border-radius:14px;padding:20px 26px}
-.vm h3{margin:0 0 8px;color:#fff;font-size:1.15rem}
-
-/* values */
-.vals{display:grid;gap:12px;margin-top:6px}
-.vals div{display:grid;grid-template-columns:1fr 1.3fr;border-radius:999px;overflow:hidden;background:var(--blue);color:#fff}
-.vals b{padding:11px 24px;border-right:2px solid rgba(255,255,255,.55)}
-.vals span{padding:11px 24px;font-size:.95rem}
-.split{display:grid;grid-template-columns:.8fr 1.4fr;gap:32px;align-items:start}
-@media(max-width:700px){.split{grid-template-columns:1fr}.vals div{grid-template-columns:1fr;border-radius:18px}.vals b{border-right:0;border-bottom:2px solid rgba(255,255,255,.4)}}
-
-/* services */
-.svc{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;margin-top:22px}
-.svc h3{margin:0 0 4px;background:var(--blue);color:#fff;border-radius:999px;padding:7px 20px;font-size:1.05rem;display:inline-block}
-.svc p{padding-left:8px;font-size:.95rem}
-.intro{background:#fff;border:1px solid #dcdff5;border-radius:14px;padding:18px 24px;box-shadow:0 3px 14px rgba(0,0,60,.08)}
-@media(max-width:700px){.svc{grid-template-columns:1fr}}
-
-/* industries + tiles */
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
-.tiles div{background:#f2f3fb;border-radius:14px;padding:22px 14px;text-align:center;font-weight:700;color:var(--blue);min-height:90px;display:grid;place-items:center}
-@media(max-width:700px){.tiles{grid-template-columns:1fr 1fr}}
-
-/* difference */
-.diff{background:var(--blue);color:#fff;border-radius:18px;padding:30px 32px;margin:0 0 6px;font-style:italic}
-.diff .tiles div{background:#fff;color:var(--ink);font-style:normal;font-size:.95rem}
-.diff .tiles div em{display:block;font-style:normal;color:var(--blue)}
-
-/* why */
-.chain{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
-.chain div{border:2px solid var(--blue);border-radius:999px;padding:12px 18px;text-align:center;font-weight:600;font-size:.9rem;color:var(--blue)}
-@media(max-width:700px){.chain{grid-template-columns:1fr 1fr}}
-
-/* get in touch */
-.touch{background:var(--blue);color:#fff;min-height:100%}
-.touch .band{background:var(--blue)}
-.touch .body{padding-top:20px}
-.touch p.lead{font-style:italic;color:#e4e7ff}
-.box{background:#fff;color:var(--blue);border-radius:16px;padding:22px 30px;margin-top:26px;max-width:560px;border-left:8px solid var(--blue);line-height:2}
-.box a{color:var(--blue);text-decoration:none}
-.touch .foot{color:#fff}
-.touch .num{background:#fff;color:var(--blue)}
-@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="progress" aria-hidden="true"><i></i></div>
 
 <!-- 1 · COVER -->
-<section class="page cover">
-  <div><img class="logo" src="https://i.postimg.cc/4dbyWT4x/1.png" alt="Rare Grade Tech – Imagination to Reality"></div>
+<section class="page cover" aria-label="Cover">
+  <div><img class="logo" data-logo alt="Rare Grade Tech – Imagination to Reality"></div>
   <div class="tag">
     <h1>COMPANY<br>PROFILE</h1>
     <span class="motto">Smart Technology | Meaningful Solutions | Measurable Results</span>
   </div>
   <div class="follow">Follow Us &nbsp; raregradetech.com</div>
   <div class="cta">
-    <span class="chip">COMPANY PROFILE</span>
+    <span class="chip">COMPANY PROFILE 2026</span>
     <div class="contact">
       <a href="tel:+27615270749">061 527 0749</a><br>
       <a href="mailto:info@raregradetech.co.za">info@raregradetech.co.za</a><br>
@@ -133,22 +32,19 @@ b,strong{font-weight:700}
 </section>
 
 <!-- 2 · COMPANY OVERVIEW -->
-<section class="page">
-  <div class="band"><h2>COMPANY OVERVIEW</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page" data-title="COMPANY OVERVIEW">
   <div class="body two">
     <div class="card">
       <p><b>Rare Grade Tech</b> operates as a full service technology company delivering end-to-end digital solutions across multiple industries.</p>
       <h3>Services include:</h3>
       <ul><li>Software Development</li><li>Web &amp; Mobile Apps</li><li>AI &amp; Automation</li><li>IT Support &amp; Infrastructure</li><li>Hardware Services</li><li>Graphic Design</li><li>Digital Transformation</li></ul>
     </div>
-    <div class="visual"><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+    <div class="visual"><img data-logo alt=""></div>
   </div>
-  <div class="num">2</div>
 </section>
 
 <!-- 3 · ABOUT US -->
-<section class="page dark">
-  <div class="band"><h2>ABOUT US</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page dark" data-title="ABOUT US">
   <div class="body">
     <p class="lead"><b>Rare Grade Tech is</b> a modern technology company dedicated to building intelligent digital solutions that help businesses, institutions, and communities operate efficiently in a digital world.</p>
     <p class="lead" style="margin-top:16px">We combine software development, mobile applications, AI solutions, IT support, and hardware services into one integrated ecosystem.</p>
@@ -158,12 +54,10 @@ b,strong{font-weight:700}
     </div>
   </div>
   <div class="foot">Every milestone in our journey reflects our commitment to innovation, excellence, and creating opportunities through technology.</div>
-  <div class="num">3</div>
 </section>
 
 <!-- 4 · MISSION STATEMENT -->
-<section class="page">
-  <div class="band"><h2>MISSION STATEMENT</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page" data-title="MISSION STATEMENT">
   <div class="body">
     <p class="lead">Every great technology company begins with a <b>clear direction</b>, a <b>belief</b> in what the future can become and a <b>commitment</b> to help shape it.</p>
     <div class="vm">
@@ -172,12 +66,10 @@ b,strong{font-weight:700}
     </div>
   </div>
   <div class="foot">"Technology is most powerful when it transforms ideas into opportunities and opportunities into lasting impact."</div>
-  <div class="num">4</div>
 </section>
 
 <!-- 5 · CORE VALUES -->
-<section class="page">
-  <div class="band"><h2>OUR CORE VALUES</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page" data-title="OUR CORE VALUES">
   <div class="body split">
     <div>
       <p><b>Our values</b> define how we approach <b>technology, business relationships, projects,</b> and the <b>communities</b> we serve.</p>
@@ -191,12 +83,10 @@ b,strong{font-weight:700}
       <div><b>Continuous Evolution</b><span>We adapt and stay ahead of technology trends.</span></div>
     </div>
   </div>
-  <div class="num">5</div>
 </section>
 
 <!-- 6 · SERVICES -->
-<section class="page">
-  <div class="band"><h2>SERVICES</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page" data-title="SERVICES">
   <div class="body">
     <p class="intro">We provide integrated technology services that help businesses, institutions, and individuals build, improve, and maintain their digital environments. Our capabilities span software, mobile applications, AI, IT infrastructure, hardware, branding, and digital transformation.</p>
     <div class="svc">
@@ -209,12 +99,10 @@ b,strong{font-weight:700}
       <div><h3>Web Development</h3><p>Modern, responsive, and high-performance websites.</p></div>
     </div>
   </div>
-  <div class="num">6</div>
 </section>
 
-<!-- 7 · INDUSTRIES WE SERVE -->
-<section class="page">
-  <div class="band"><h2>INDUSTRIES WE SERVE</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<!-- 7 · INDUSTRIES -->
+<section class="page" data-title="INDUSTRIES WE SERVE">
   <div class="body">
     <p class="lead"><b>Every industry has different challenges</b> and opportunities. Rare Grade Tech adapts its technology solutions to the specific needs of each client, helping organizations improve operations, engage customers, and take advantage of digital opportunities.</p>
     <div class="tiles">
@@ -223,12 +111,10 @@ b,strong{font-weight:700}
     </div>
   </div>
   <div class="foot">Every project reflects our commitment to innovation, quality, and meaningful results.</div>
-  <div class="num">7</div>
 </section>
 
 <!-- 8 · OUR DIFFERENCE -->
-<section class="page">
-  <div class="band"><h2 style="color:#fff">OUR DIFFERENCE</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page" data-title="OUR DIFFERENCE">
   <div class="body">
     <div class="diff">
       <p>We see technology as more than individual solutions. Our strength lies in connecting ideas, people, and possibilities into one seamless approach—creating smarter outcomes, stronger relationships, and lasting value for every organization we work with.</p>
@@ -242,27 +128,23 @@ b,strong{font-weight:700}
       </div>
     </div>
   </div>
-  <div class="num">8</div>
 </section>
 
 <!-- 9 · WHY CHOOSE US -->
-<section class="page">
-  <div class="band"><h2>WHY CHOOSE US</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page" data-title="WHY CHOOSE US">
   <div class="body">
     <p class="lead">Technology should simplify business, not create more complexity. We bring technical expertise, modern innovation, and a customer first approach together to deliver solutions that are practical, scalable, and built for long-term value.</p>
     <div class="chain">
-      <div>One-stop technology solutions</div><div>Modern Technology</div><div>Transparent Process</div>
-      <div>Customer-focused approach</div><div>Ongoing support</div><div>Full-Stack Team</div>
-      <div>AI-driven innovation</div><div>Fast and reliable delivery</div><div>Future-ready technology</div>
+      <div>One-stop technology solutions</div><div>Full-Stack Team</div><div>Modern Technology</div>
+      <div>AI-driven innovation</div><div>Transparent Process</div><div>Fast and reliable delivery</div>
+      <div>Customer-focused approach</div><div>Future-ready technology</div><div>Ongoing support</div>
     </div>
   </div>
   <div class="foot">Every project reflects our commitment to innovation, quality, and meaningful results.</div>
-  <div class="num">9</div>
 </section>
 
 <!-- 10 · GET IN TOUCH -->
-<section class="page touch">
-  <div class="band"><h2>GET IN TOUCH</h2><div class="pills"><i></i><i></i><i></i><i></i></div><div class="bar"></div><img src="https://i.postimg.cc/4dbyWT4x/1.png" alt=""></div>
+<section class="page touch" data-title="GET IN TOUCH">
   <div class="body">
     <p class="lead">Let's discuss how technology can help your business grow. Whether you need technical support, a website, a mobile application, AI solutions, or a custom software system, our team is ready to help.</p>
     <div class="box">
@@ -273,8 +155,15 @@ b,strong{font-weight:700}
     </div>
   </div>
   <div class="foot">Our team is here to provide expert advice, reliable support, and tailored digital solutions that deliver real results.</div>
-  <div class="num">10</div>
 </section>
 
+<nav class="toolbar" aria-label="Profile pages">
+  <button id="prev" aria-label="Previous page">&#8592;</button>
+  <span id="count" aria-live="polite">1 / 10</span>
+  <button id="next" aria-label="Next page">&#8594;</button>
+  <button id="print" aria-label="Print or save as PDF">Save PDF</button>
+</nav>
+
+<script src="script.js"></script>
 </body>
 </html>
