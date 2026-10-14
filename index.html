@@ -146,14 +146,62 @@
 
 <!-- 10 · GET IN TOUCH -->
 <section class="page touch" data-title="GET IN TOUCH">
-  <div class="body">
-    <p class="lead">Let's discuss how technology can help your business grow. Whether you need technical support, a website, a mobile application, AI solutions, or a custom software system, our team is ready to help.</p>
-    <div class="box">
-      <b><a href="tel:+27615270749">061 527 0749</a></b><br>
-      <a href="mailto:info@raregradetech.co.za">info@raregradetech.co.za</a><br>
-      69 Hooge Street, Mokopane, 0601<br>
-      <a href="https://raregradetech.com">raregradetech.com</a>
+  <div class="body contact-grid">
+    <div>
+      <p class="lead">Let's discuss how technology can help your business grow. Whether you need technical support, a website, a mobile application, AI solutions, or a custom software system, our team is ready to help.</p>
+      <div class="box">
+        <b><a href="tel:+27615270749">061 527 0749</a></b><br>
+        <a href="mailto:info@raregradetech.co.za">info@raregradetech.co.za</a><br>
+        69 Hooge Street, Mokopane, 0601<br>
+        <a href="https://raregradetech.com">raregradetech.com</a>
+      </div>
     </div>
+
+    <form class="formcard" id="contactForm" novalidate>
+      <h3>Send us a message</h3>
+      <div class="row">
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+          <span class="err"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="f-phone">Phone (optional)</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="f-service">Service needed</label>
+          <select id="f-service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Software Development</option>
+            <option>Web Development</option>
+            <option>Mobile App Development</option>
+            <option>AI Automation &amp; Integration</option>
+            <option>IT Support &amp; Hardware Services</option>
+            <option>PC Refurbishing &amp; Resale</option>
+            <option>Graphic Design &amp; Branding</option>
+            <option>Something else</option>
+          </select>
+          <span class="err"></span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-message">Message</label>
+        <textarea id="f-message" name="message" rows="5" required></textarea>
+        <span class="err"></span>
+      </div>
+      <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="send">Send message</button>
+      <p class="status" id="formStatus" role="status"></p>
+    </form>
   </div>
   <div class="foot">Our team is here to provide expert advice, reliable support, and tailored digital solutions that deliver real results.</div>
 </section>
