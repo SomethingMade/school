@@ -119,9 +119,31 @@ a{color:inherit}
 .touch .lead{font-style:italic;color:#e4e7ff}
 .touch .foot{color:#fff}
 .touch .num{background:#fff;color:var(--blue)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
 .box{background:#fff;color:var(--blue);border-radius:16px;padding:26px 34px;margin-top:28px;border-left:8px solid #000;line-height:2;font-size:1.1rem}
 .box a{text-decoration:none}
 .box a:hover{text-decoration:underline}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:32px}}
+
+/* contact form */
+.formcard{background:#fff;color:var(--ink);border-radius:18px;padding:30px 32px;box-shadow:0 10px 34px rgba(0,0,60,.3)}
+.formcard h3{margin:0 0 18px;color:var(--blue);font-size:1.4rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:600;font-size:.88rem;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#f7f8fe;border:2px solid #c9cdf5;border-radius:10px;padding:12px 14px;transition:border-color .15s,background .15s}
+.field textarea{resize:vertical;min-height:120px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);background:#fff}
+.field [aria-invalid="true"]{border-color:#c4261d;background:#fff6f5}
+.err{display:block;min-height:1.2em;margin-top:4px;font-size:.82rem;font-weight:600;color:#c4261d}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.send{width:100%;font:inherit;font-weight:700;font-size:1.05rem;color:#fff;background:var(--blue);border:0;border-radius:999px;padding:14px 24px;cursor:pointer;transition:background .15s}
+.send:hover{background:var(--deep)}
+.send:disabled{opacity:.65;cursor:wait}
+.status{margin-top:14px;font-weight:600;font-size:.95rem;min-height:1.4em}
+.status.ok{color:#0a7a3c}
+.status.error{color:#c4261d}
 
 /* the cover animates in once */
 @media(prefers-reduced-motion:no-preference){
@@ -135,7 +157,7 @@ a{color:inherit}
 @media print{
   @page{size:A4 landscape;margin:0}
   body{background:#fff;padding:0}
-  .toolbar,.progress,.topnav{display:none}
+  .toolbar,.progress,.topnav,.formcard{display:none}
   .page{min-height:100vh;break-after:page}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
