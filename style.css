@@ -7,7 +7,18 @@ b{font-weight:700}
 a{color:inherit}
 :focus-visible{outline:3px solid #7aa2ff;outline-offset:3px}
 
-/* progress + toolbar */
+/* top nav */
+.topnav{position:sticky;top:0;z-index:15;margin:-24px -16px 24px;background:var(--blue);color:#fff;display:flex;align-items:center;gap:16px;padding:0 20px;height:56px;box-shadow:0 4px 18px rgba(0,0,80,.25)}
+.nav-logo{flex:none;display:block;border:0;background:none;padding:0;cursor:pointer}
+.nav-logo img{height:30px;width:auto;display:block}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;padding:4px 0}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:inherit;font-size:.88rem;font-weight:600;color:#fff;background:transparent;border:0;border-radius:999px;padding:8px 16px;cursor:pointer;opacity:.85;transition:background .2s,color .2s}
+.tabs button:hover{background:rgba(255,255,255,.18);opacity:1}
+.tabs button.on{background:#fff;color:var(--blue);opacity:1}
+@media(max-width:700px){.topnav{margin:-24px -16px 18px;padding:0 10px;gap:8px}.nav-logo{display:none}}
+
+/* progress + bottom toolbar */
 .progress{position:fixed;top:0;left:0;right:0;height:4px;background:rgba(0,0,224,.15);z-index:20}
 .progress i{display:block;height:100%;width:0;background:var(--blue);transition:width .25s}
 .toolbar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:var(--blue);color:#fff;border-radius:999px;padding:6px 8px;box-shadow:0 8px 24px rgba(0,0,80,.35);z-index:20}
@@ -18,7 +29,7 @@ a{color:inherit}
 .toolbar #print:hover{background:#e4e7ff}
 
 /* page sheet */
-.page{position:relative;max-width:1000px;min-height:560px;margin:0 auto 28px;background:var(--sheet);border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,40,.18);scroll-margin-top:20px}
+.page{position:relative;max-width:1000px;min-height:560px;margin:0 auto 28px;background:var(--sheet);border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,40,.18);scroll-margin-top:76px}
 .band{background:var(--blue);color:#fff;display:flex;align-items:center;gap:18px;padding:0 36px;height:110px}
 .band h2{margin:0;font-size:clamp(1.3rem,3.4vw,2.3rem);font-weight:700;letter-spacing:-.01em;color:#fff}
 .pills{display:flex;gap:6px}
@@ -124,7 +135,7 @@ a{color:inherit}
 @media print{
   @page{size:A4 landscape;margin:0}
   body{background:#fff;padding:0}
-  .toolbar,.progress{display:none}
+  .toolbar,.progress,.topnav{display:none}
   .page{margin:0;border-radius:0;box-shadow:none;max-width:none;min-height:100vh;break-after:page}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
